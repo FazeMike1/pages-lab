@@ -1,7 +1,7 @@
 {
   "name": "port-lab",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postStartCommand": "nohup python3 -m http.server 8000 --directory /workspaces > /tmp/http.log 2>&1 &",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postStartCommand": "bash -lc 'nohup python3 -m http.server 8000 --directory /workspaces > /tmp/http.log 2>&1 &'",
   "forwardPorts": [8000],
   "portsAttributes": { "8000": { "label": "lab-http", "visibility": "private" } }
 }
