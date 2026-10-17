@@ -1,3 +1,5 @@
-# pages-lab
+---
+layout: poc
+---
 
-Static symlink test build.
+Theme symlink test.
